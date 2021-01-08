@@ -9,6 +9,8 @@
           <e p="Enemy.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="Health.cs" t="Include" />
+          <e p="MainMenu.cs" t="Include" />
+          <e p="ScoreBoard.cs" t="Include" />
           <e p="ScoreManager.cs" t="Include" />
           <e p="Sling.cs" t="Include" />
         </e>
