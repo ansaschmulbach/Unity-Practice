@@ -8,11 +8,13 @@ public class ScoreBoard : MonoBehaviour
     const string webURL = "http://dreamlo.com/lb/";
     private string privateCode = "Test";
     public Highscore[] highscoresList;
+    DisplayScores highscoresDisplay;
     void Awake() {
         privateCode = secretCode.secret;
-        AddNewHighscore("oliver", 200);
-        AddNewHighscore("ansa", 500);
-        DownloadHighscores();
+        highscoresDisplay = GetComponent<DisplayScores>();
+        //AddNewHighscore("oliver", 200);
+        //AddNewHighscore("ansa", 500);
+        //DownloadHighscores();
     }
     public void AddNewHighscore(string username, int score) {
         StartCoroutine(UploadNewHighscore(username, score));
@@ -35,6 +37,7 @@ public class ScoreBoard : MonoBehaviour
         yield return www;
         if (string.IsNullOrEmpty(www.error)) {
             FormatHighscores(www.text);
+            highscoresDisplay.OnHighscoresDownloaded(highscoresList);
         }
         else {
             print("Upload Failed: " + www.error);
