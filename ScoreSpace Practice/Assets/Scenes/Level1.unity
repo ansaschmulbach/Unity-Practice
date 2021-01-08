@@ -520,6 +520,16 @@ PrefabInstance:
       propertyPath: text
       value: 
       objectReference: {fileID: 1485339599}
+    - target: {fileID: 8458706531475747462, guid: e90d90e91859c4571bd03a2c1bdf81b8,
+        type: 3}
+      propertyPath: levelLength
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8458706531475747462, guid: e90d90e91859c4571bd03a2c1bdf81b8,
+        type: 3}
+      propertyPath: nextLevel
+      value: Level2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e90d90e91859c4571bd03a2c1bdf81b8, type: 3}
 --- !u!1 &1485339597
@@ -704,8 +714,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1697929245}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.864, y: -4.65, z: -0.4345703}
-  m_LocalScale: {x: 15.006134, y: 1, z: 1}
+  m_LocalPosition: {x: 0.202, y: -4.65, z: -0.4345703}
+  m_LocalScale: {x: 16.329315, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
