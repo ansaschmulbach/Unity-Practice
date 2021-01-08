@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class Health : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class Health : MonoBehaviour
     [SerializeField] public Slider slider;
     [SerializeField] public Gradient gradient;
     [SerializeField] public Image filler;
+    [SerializeField] public AudioClip deathSFX;
 
     void Start()
     {
@@ -56,6 +58,10 @@ public class Health : MonoBehaviour
     
     public void Die()
     {
+        if (deathSFX)
+        {
+            
+        }
         Destroy(this.gameObject);
     }
     
