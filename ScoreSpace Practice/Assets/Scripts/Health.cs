@@ -33,6 +33,10 @@ public class Health : MonoBehaviour
     {
         health = Math.Max(0, health - amount);
         UpdateSlider();
+        if (health == 0)
+        {
+            Die();
+        }
     }
 
     public void GainHealth(int amount)

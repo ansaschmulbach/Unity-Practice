@@ -16,7 +16,7 @@ public class Enemy : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         Rigidbody2D rb = other.collider.GetComponent<Rigidbody2D>();
-        health.LoseHealth((int) rb.velocity.magnitude);
         scoreManager.IncreaseScore((int) rb.velocity.magnitude);
+        health.LoseHealth((int) rb.velocity.magnitude);
     }
 }
